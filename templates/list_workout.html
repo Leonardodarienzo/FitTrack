@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Allenamenti</title>
+</head>
+<body>
+  <h2>Lista Allenamenti</h2>
+  <ul>
+    {% for w in workouts %}
+      <li>ID Utente: {{ w.userId }}, Tipo: {{ w.type }}, Durata: {{ w.duration }} min, Data: {{ w.date }}</li>
+    {% endfor %}
+  </ul>
+  <a href="/">Torna alla Home</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Aggiungi Allenamento</title>
+</head>
+<body>
+  <h2>Nuovo Allenamento</h2>
+  <form action="/add_workout" method="POST">
+    <label>ID Utente:</label>
+    <input type="text" name="userId" required><br><br>
+    <label>Tipo:</label>
+    <input type="text" name="type" required><br><br>
+    <label>Durata (minuti):</label>
+    <input type="number" name="duration" required><br><br>
+    <button type="submit">Salva</button>
+  </form>
+  <a href="/">Torna alla Home</a>
+</body>
+</html>
